@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e1288ccaa1a6849bd804e378b9c1d6, type: 3}
+  m_Name: AK74
+  m_EditorClassIdentifier: 
+  _id: 2
+  _prefabWeapon: {fileID: 6726046041222125637, guid: f6967d7b0bfa71448a9d7e379835ddf7, type: 3}
+  _prefabBullet: {fileID: 2610609965241053931, guid: c723f8e0eb13c0f4d9b82624128c62ba, type: 3}
+  _damage: 1
+  _ammoInMagazine: 30
+  _shootingDaley: 0.1
+  _reloading: 1
+  _typeAmmo: 1

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e1288ccaa1a6849bd804e378b9c1d6, type: 3}
+  m_Name: PM
+  m_EditorClassIdentifier: 
+  _id: 1
+  _prefabWeapon: {fileID: 6365327066279833549, guid: b7357fe7a8817c447916305f89afe12f, type: 3}
+  _prefabBullet: {fileID: 2610609965241053931, guid: c723f8e0eb13c0f4d9b82624128c62ba, type: 3}
+  _damage: 1
+  _ammoInMagazine: 9
+  _shootingDaley: 0.5
+  _reloading: 0.8
+  _typeAmmo: 0
