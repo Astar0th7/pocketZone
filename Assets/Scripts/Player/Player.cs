@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
             Shooting();
     }
 
-    private void Reloading()
+    public void Reloading()
     {
         int amountNeed = _weaponData.AmmoInMagazine - _ammoInMagazine;
         
