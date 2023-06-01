@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     private Enemy _enemy;
 
     public float Speed => _speed;
+    public float DefaultHealth => _defaultHealth;
     public WeaponData WeaponData => _weaponData;
     public Vector2 Direction => _direction;
     public Enemy Enemy => _enemy;
@@ -48,7 +49,7 @@ public class Player : MonoBehaviour
     {
         if (_weaponData != null)
         {
-            _weaponObject = Instantiate(_weaponData.PrefabWeapon, _positionWeapon.position, Quaternion.identity);
+            _weaponObject = Instantiate(_weaponData.PrefabWeapon, _positionWeapon);
             _weaponObject.transform.parent = _positionWeapon;
             _ammoInMagazine = _weaponData.AmmoInMagazine;
         }
@@ -123,5 +124,21 @@ public class Player : MonoBehaviour
     public void EnemyInRange(Enemy enemy)
     {
         _enemiesInRange.Enqueue(enemy);
+    }
+
+    public void SetSpeed(float speed)
+    {
+        if (speed <= 0)
+            throw new ArgumentException("Знначение скорость не может быть отрицательным или равным нулю.", nameof(speed)) ;
+
+        _speed = speed;
+    }
+
+    public void SetHealth(float health)
+    {
+        if (health <= 0)
+            throw new ArgumentException("Знначение здоровья не может быть отрицательным или равным нулю.", nameof(health)) ;
+
+        _defaultHealth = health;
     }
 }
