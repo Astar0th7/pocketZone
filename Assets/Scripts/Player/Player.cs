@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
         _currentHealth -= damage;
         
         if (_currentHealth <= 0)
-            Debug.Log("Death");
+            Destroy(gameObject);
         
         _changeHealth.Invoke(_normalizeHealth);
     }
